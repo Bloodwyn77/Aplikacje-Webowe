@@ -1,0 +1,36 @@
+#contener{
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    gap:10 px;
+    justify-items:center;
+    max-width:600px;
+    margin: 0 auto;
+}
+.box{
+    width:100px;
+    height:100px;
+}
+#box1,#box2{
+    grid-column: span 3;
+}
+#box3,#box4,#box5{
+    grid-column: span 2;
+}
+#box1{
+    background-color:rgb(204, 63, 63);
+}
+#box2{
+    background-color:rgb(63, 141, 204);
+    background-image:url('piesek.jpg');
+    background-size:cover;
+    border: solid 5px rgb(162, 195, 221);
+}
+#box3{
+    background-color:rgb(99, 15, 71);
+}
+#box4{
+    background-color:rgb(189, 46, 182);
+}
+#box5{
+    background-color:rgb(22, 44, 94);
+}

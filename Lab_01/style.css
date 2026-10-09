@@ -9,6 +9,44 @@ body {
 .main-container {
   height: 100%;
   display: flex;
+  flex-direction:column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+}
+#tytul{
+  color: #333;
+  font-size: 2.5rem;
+  text-align: center;
+}
+#cwiczenia{
+  font-size: 2rem;
+  text-align: center;
+}
+#pierwsze{
+  color:red;
+}
+#drugie{
+  color:yellow;
+
+}
+#trzecie{
+  color:green;
+}
+#pierwsze:visited{
+  color:rgb(243, 58, 58)
+}
+#drugie:visited{
+  color:rgb(238, 241, 56)
+}
+#trzecie:visited{
+  color:rgb(85, 212, 85)
+}
+#pierwsze:hover{
+  color:blue;
+}
+#drugie:hover{
+  color:blue;
+}
+#trzecie:hover{
+  color:blue;
 }
