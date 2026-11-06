@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: rgb(18, 22, 25);
+    color: rgb(241, 242, 246);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 { font-size: 2.3rem; color: rgb(231, 76, 60); }
+
+h2 {
+    font-size: 1.6rem;
+    color: rgb(230, 126, 34);
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 3px solid rgb(241, 196, 15);
+}
+
+img { max-width: 100%; display: block; }
+
+/* Nawigacja */
+header {
+    background: rgb(12, 15, 18);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 8px;
+}
+
+nav ul a {
+    color: rgb(224, 224, 224);
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: 0.25s;
+}
+
+nav ul a:hover,
+nav ul a.active {
+    background: rgb(231, 76, 60);
+    color: rgb(255, 255, 255);
+}
+
+.hamburger {
+    display: none;
+    font-size: 26px;
+    background: none;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+}
+
+/* Układ strony */
+main {
+    max-width: 1160px;
+    width: 100%;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.podstrona-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.kontakt-layout {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.karta {
+    background: rgb(28, 34, 39);
+    border: 1px solid rgb(47, 54, 64);
+    border-radius: 18px;
+    padding: 30px;
+}
+
+/* Formularz */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+label { font-weight: 600; font-size: 0.9rem; }
+
+.wymagane { color: rgb(231, 76, 60); }
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1.5px solid rgb(47, 54, 64);
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    background: rgb(18, 22, 25);
+    color: rgb(241, 242, 246);
+    outline: none;
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+    border-color: rgb(230, 126, 34);
+}
+
+.pole-blad {
+    border-color: rgb(231, 76, 60) !important;
+}
+
+.error-msg {
+    font-size: 0.8rem;
+    color: rgb(231, 76, 60);
+    min-height: 18px;
+}
+
+input[type="submit"] {
+    background: rgb(231, 76, 60);
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+input[type="submit"]:hover { background: rgb(192, 57, 43); }
+
+.sukces-box {
+    display: none;
+    background: rgba(46, 204, 113, 0.15);
+    border: 2px solid rgb(46, 204, 113);
+    color: rgb(46, 204, 113);
+    padding: 15px;
+    border-radius: 12px;
+}
+
+/* Karta Ogóra */
+.ogor-avatar {
+    max-width: 220px;
+    margin: 0 auto 15px;
+}
+
+.karta h3 {
+    color: rgb(46, 204, 113);
+    margin-bottom: 8px;
+}
+
+.ogor-cytat {
+    font-style: italic;
+    color: rgb(164, 176, 190);
+    border-left: 3px solid rgb(46, 204, 113);
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.dane-kontaktowe {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 0.9rem;
+}
+
+/* Stopka */
+footer {
+    background: rgb(12, 15, 18);
+    text-align: center;
+    padding: 22px 20px;
+    border-top: 3px solid rgb(241, 196, 15);
+}
+
+footer strong { color: rgb(241, 196, 15); }
+
+/* RWD */
+@media (max-width: 992px) {
+    .kontakt-layout { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+    nav { justify-content: flex-end; }
+    .hamburger { display: block; }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    nav ul.pokaz { display: flex; }
+
+    nav ul a {
+        display: block;
+        text-align: center;
+    }
+}

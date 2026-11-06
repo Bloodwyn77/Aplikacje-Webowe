@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria Kadrów i Kino - Bujdy na Resorach</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="galeria.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <button class="hamburger" onclick="toggleMenu()">☰</button>
+            <ul id="menu">
+                <li><a href="index.html">Strona główna</a></li>
+                <li><a href="bajeczki.html">Bujdy Złomka</a></li>
+                <li><a href="galeria.html" class="active">Galeria & Wideo</a></li>
+                <li><a href="kontakt.html">Kontakt do Ogóra</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="podstrona-header">
+            <h1>Galeria Kadrów & Kino Samochodowe</h1>
+        </section>
+
+        <section class="sekcja">
+            <h2>Kadry z Trasy 66 i Bujd na Resorach</h2>
+            <div class="galeria-wrap">
+                <figure class="foto-karta">
+                    <img src="img/bajeczki/tokio.jpg" alt="Złomek w Tokio Drift">
+                </figure>
+                <figure class="foto-karta">
+                    <img src="img/bajeczki/smialek.jpg" alt="Złomek Kaskader Śmiałek">
+                </figure>
+                <figure class="foto-karta">
+                    <img src="img/bajeczki/strazak.jpg" alt="Dzielny wóz strażacki Złomek">
+                </figure>
+                <figure class="foto-karta">
+                    <img src="img/bajeczki/matador.jpg" alt="Złomek walczący z buldożerami">
+                </figure>
+                <figure class="foto-karta">
+                    <img src="img/bajeczki/ufo.jpg" alt="Spotkanie Złomka ze spodkiem UFO Mówio">
+                </figure>
+                <figure class="foto-karta">
+                    <img src="img/zygzak.jpg" alt="Zygzak McQueen #95">
+                </figure>
+                <figure class="foto-karta">
+                    <img src="img/1.jpg" alt="Zawodnik Nitroade #28">
+                </figure>
+                <figure class="foto-karta">
+                    <img src="img/2.jpg" alt="Zawodnik Piston Cup">
+                </figure>
+                <figure class="foto-karta">
+                    <img src="img/3.jpg" alt="Bolid wyścigowy">
+                </figure>
+                <figure class="foto-karta">
+                    <img src="img/4.jpg" alt="Dale Earnhardt Jr #8">
+                </figure>
+                <figure class="foto-karta">
+                    <img src="img/5.jpg" alt="Dinoco #42">
+                </figure>
+                <figure class="foto-karta">
+                    <img src="img/7.jpg" alt="Sputter Stop #92">
+                </figure>
+                <figure class="foto-karta">
+                    <img src="img/8.jpg" alt="Zawodnik World Grand Prix">
+                </figure>
+                <figure class="foto-karta">
+                    <img src="img/marucha.jpg" alt="Marek Marucha #86">
+                </figure>
+                <figure class="foto-karta">
+                    <img src="img/pankrol.jpg" alt="Pan Król Dinoco #43">
+                </figure>
+            </div>
+        </section>
+
+        <section class="sekcja">
+            <h2>Kino Samochodowe w Chłodnicy Górskiej</h2>
+            <div class="video-container">
+                <video src="video/ostatniwyscig.mp4" controls preload="metadata" poster="img/zygzak.jpg">
+                    Twoja przeglądarka nie obsługuje tagu wideo.
+                </video>
+                <p class="video-podpis"><em>Seans filmowy: Decydujące okrążenia na torze Dinoco 400</em></p>
+            </div>
+        </section>
+    </main>
+
+    <div id="modal-foto" class="modal">
+        <img class="modal-content" id="modal-img" alt="">
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Bujdy na Resorach &bull; Projekt wykonał: <strong>Paweł Mierzwa</strong></p>
+    </footer>
+
+    <script src="galeria.js"></script>
+</body>
+</html>

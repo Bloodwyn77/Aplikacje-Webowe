@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: rgb(18, 22, 25);
+    color: rgb(241, 242, 246);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 { font-size: 2.3rem; color: rgb(231, 76, 60); }
+
+h2 {
+    font-size: 1.7rem;
+    color: rgb(230, 126, 34);
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 3px solid rgb(241, 196, 15);
+}
+
+p { margin-bottom: 12px; }
+
+img { max-width: 100%; display: block; }
+
+header {
+    background: rgb(12, 15, 18);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 8px;
+}
+
+nav ul a {
+    color: rgb(224, 224, 224);
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: 0.25s;
+}
+
+nav ul a:hover,
+nav ul a.active {
+    background: rgb(231, 76, 60);
+    color: rgb(255, 255, 255);
+}
+
+.hamburger {
+    display: none;
+    font-size: 26px;
+    background: none;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+}
+
+
+main {
+    max-width: 1160px;
+    width: 100%;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.sekcja { margin-bottom: 50px; }
+
+
+.hero {
+    background: linear-gradient(135deg, rgba(230, 126, 34, 0.12), rgba(231, 76, 60, 0.15)), rgb(28, 34, 39);
+    border: 2px solid rgb(47, 54, 64);
+    border-radius: 18px;
+    padding: 40px;
+    margin-bottom: 30px;
+}
+
+.motto {
+    font-size: 1.3rem;
+    font-style: italic;
+    font-weight: 600;
+    color: rgb(230, 126, 34);
+}
+
+.opis {
+    color: rgb(164, 176, 190);
+    max-width: 850px;
+}
+
+
+.clock-banner {
+    background: rgb(28, 34, 39);
+    border: 1px solid rgb(47, 54, 64);
+    border-left: 5px solid rgb(241, 196, 15);
+    border-radius: 12px;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+#zegar {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    background: rgb(12, 15, 18);
+    color: rgb(241, 196, 15);
+    padding: 4px 12px;
+    border-radius: 6px;
+}
+
+
+.karty {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.karta {
+    background: rgb(28, 34, 39);
+    border: 1px solid rgb(47, 54, 64);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.25s;
+}
+
+.karta:hover {
+    transform: translateY(-6px);
+    border-color: rgb(241, 196, 15);
+}
+
+.karta img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.karta-tresc { padding: 20px; }
+
+.karta-tresc h3 { font-size: 1.25rem; }
+
+.rola {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: rgb(231, 76, 60);
+    text-transform: uppercase;
+}
+
+.karta-tresc p:last-child {
+    color: rgb(164, 176, 190);
+    font-size: 0.95rem;
+    margin-bottom: 0;
+}
+
+
+.table-responsive {
+    overflow-x: auto;
+    border-radius: 12px;
+    border: 1px solid rgb(47, 54, 64);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background: rgb(28, 34, 39);
+    text-align: left;
+}
+
+th, td {
+    padding: 14px 18px;
+    border: 1px solid rgb(47, 54, 64);
+}
+
+th {
+    background: rgb(12, 15, 18);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+tr:hover { background: rgba(241, 196, 15, 0.08); }
+
+/* Ciekawostki */
+.ciekawostki-box {
+    background: rgb(28, 34, 39);
+    border: 1px solid rgb(230, 126, 34);
+    border-radius: 12px;
+    padding: 25px 30px;
+    margin-bottom: 30px;
+}
+
+.ciekawostki-box ul {
+    margin-left: 20px;
+}
+
+.ciekawostki-box li {
+    margin-bottom: 12px;
+    padding-left: 6px;
+}
+
+.ciekawostki-box strong { color: rgb(231, 76, 60); }
+
+/* Stopka */
+footer {
+    background: rgb(12, 15, 18);
+    text-align: center;
+    padding: 22px 20px;
+    border-top: 3px solid rgb(241, 196, 15);
+}
+
+footer strong { color: rgb(241, 196, 15); }
+
+
+@media (max-width: 768px) {
+    nav { justify-content: flex-end; }
+    .hamburger { display: block; }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    nav ul.pokaz { display: flex; }
+
+    nav ul a {
+        display: block;
+        text-align: center;
+    }
+
+    .hero { padding: 25px 20px; }
+
+    h1 { font-size: 1.8rem; }
+
+    h2 { font-size: 1.4rem; }
+
+    .clock-banner {
+        flex-direction: column;
+        text-align: center;
+    }
+}

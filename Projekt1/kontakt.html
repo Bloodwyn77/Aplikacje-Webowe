@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt do Ogóra Chłodnica Górska</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="kontakt.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <button class="hamburger" onclick="toggleMenu()">☰</button>
+            <ul id="menu">
+                <li><a href="index.html">Strona główna</a></li>
+                <li><a href="bajeczki.html">Bujdy Złomka</a></li>
+                <li><a href="galeria.html">Galeria & Wideo</a></li>
+                <li><a href="kontakt.html" class="active">Kontakt do Ogóra</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="podstrona-header">
+            <h1>Skontaktuj się z Ogórem</h1>
+        </section>
+
+        <div class="kontakt-layout">
+            <section class="karta">
+                <h2>Napisz do nas</h2>
+                <form id="formularz-kontaktowy" novalidate>
+                    <div class="form-group">
+                        <label for="email">Twój adres E-Mail: <span class="wymagane">*</span></label>
+                        <input type="text" id="email" name="email" placeholder="np. kierowca@route66.pl">
+                        <span class="error-msg" id="error-email"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="temat">Temat wiadomości: <span class="wymagane">*</span></label>
+                        <select id="temat" name="temat">
+                            <option value="">-- Wybierz temat sprawy --</option>
+                            <option value="paliwo">Paliwo</option>
+                            <option value="ekologiczne-paliwo">Ekologiczne paliwo</option>
+                            <option value="paliwo-z-pradem">Paliwo z prądem</option>
+                        </select>
+                        <span class="error-msg" id="error-temat"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="wiadomosc">Treść wiadomości: <span class="wymagane">*</span></label>
+                        <textarea id="wiadomosc" name="wiadomosc" rows="5" placeholder="Napisz, czego potrzebujesz"></textarea>
+                        <span class="error-msg" id="error-wiadomosc"></span>
+                    </div>
+
+                    <input type="submit" value="Wyślij">
+
+                    <div id="sukces-komunikat" class="sukces-box">
+                         <strong>Wiadomość została wysłana!</strong>
+                    </div>
+                </form>
+            </section>
+
+            <aside class="karta">
+                <div class="ogor-avatar">
+                    <img src="img/ogor.webp" alt="Ogór zaprasza na biopaliwo">
+                </div>
+                <h3>Chce ci się pić?</h3>
+                <p class="ogor-cytat">„Wyluzuj, stary... Zalej naturalne biopaliwo, poczuj harmonię z silnikiem i dopiero ruszaj w drogę.”</p>
+
+                <ul class="dane-kontaktowe">
+                    <li> <strong>Lokalizacja:</strong> Route 66, Chłodnica Górska</li>
+                    <li> <strong>Specjalność Ogóra:</strong> W 100% czyste biopaliwo naturalne prosto z matki ziemi</li>
+                </ul>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Bujdy na Resorach &bull; Projekt wykonał: <strong>Paweł Mierzwa</strong></p>
+    </footer>
+
+    <script src="kontakt.js"></script>
+</body>
+</html>

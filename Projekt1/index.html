@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bujdy na Resorach - Złomek & Przyjaciele</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <button class="hamburger" onclick="toggleMenu()">☰</button>
+            <ul id="menu">
+                <li><a href="index.html" class="active">Strona główna</a></li>
+                <li><a href="bajeczki.html">Bujdy Złomka</a></li>
+                <li><a href="galeria.html">Galeria & Wideo</a></li>
+                <li><a href="kontakt.html">Kontakt do Ogóra</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Złomek i Bujdy na Resorach</h1>
+            <p class="motto">„Jak bujam, to niech mi opona sparcieje!”</p>
+            <p class="opis">
+                Witaj na złomowisku w Chłodnicy Górskiej przy Route 66. To tutaj najsłynniejszy holownik na świecie
+                opowiada swoje najbardziej nieprawdopodobne przygody. Przy okazji możesz zaczerpnąć ekologicznego paliwa
+                prosto od matki natury lub obejrzeć szybkie furki.
+            </p>
+        </section>
+
+        <section class="clock-banner">
+            <span> <strong>Czas lokalny w Chłodnicy Górskiej:</strong> <span id="zegar"></span></span>
+            <span> Złomowisko czynne 24/7</span>
+        </section>
+
+        <section class="sekcja">
+            <h2>Główni Bohaterowie Opowieści</h2>
+
+            <div class="karty">
+                <article class="karta">
+                    <img src="img/bajeczki/tokio.jpg" alt="Złomek mistrz kierownicy">
+                    <div class="karta-tresc">
+                        <h3>Złomek (Tow Mater)</h3>
+                        <p class="rola">Mistrz jazdy tyłem</p>
+                        <p>Zardzewiały, ale o złotym sercu.Twierdzi, że dokonał wszystkiego, co tylko możliwe na czterech kołach.</p>
+                    </div>
+                </article>
+
+                <article class="karta">
+                    <img src="img/zygzak.jpg" alt="Zygzak McQueen">
+                    <div class="karta-tresc">
+                        <h3>Zygzak McQueen</h3>
+                        <p class="rola">Mistrz Piston Cup</p>
+                        <p>Genialny wyścigowiec o numerze 95.Pewny siebie,bystry,przebiegły i głodny wygranych</p>
+                    </div>
+                </article>
+
+                <article class="karta">
+                    <img src="img/3.jpg" alt="Wójt Hudson Doc Hudson">
+                    <div class="karta-tresc">
+                        <h3>Wójt Hudson (Doc Hudson)</h3>
+                        <p class="rola">Mistrz po prostu</p>
+                        <p>Trzykrotny zdobywca Złotego Tłoka (1951, 1952, 1953) i szanowany sędzia w miasteczku. To on nauczył Zygzaka jazdy w poślizgu na sypkim szutrze: „Skręć w prawo, aby jechać w lewo!”. Prawdziwa legenda wyścigów.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="sekcja">
+            <h2>Kronika Niewiarygodnych Dokonań Złomka</h2>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tytuł Bujdy</th>
+                            <th>Rzekoma Rola Złomka</th>
+                            <th>Niewiarygodny Wyczyn</th>
+                            <th>Obecność Zygzaka</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Złomek Strażak</strong></td>
+                            <td>Kapitan straży pożarnej</td>
+                            <td>Uratował płonący wieżowiec i zaklinowane auta</td>
+                            <td>Uwięziony na najwyższym piętrze</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Złomek Śmiałek</strong></td>
+                            <td>Kaskader numer jeden</td>
+                            <td>Skok nad Kanionem Karburatora w płonącym pierścieniu</td>
+                            <td>Skakał bez kasku za namową tłumu</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Złomek Matador</strong></td>
+                            <td>Pogromca buldożerów</td>
+                            <td>Obezwładnienie stada szarżujących buldożerów czerwoną płachtą</td>
+                            <td>Wjechał na arenę jako wściekły czerwony byk</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Złomek w Tokio</strong></td>
+                            <td>Król japońskiego driftu</td>
+                            <td>Wygrał wyścig ze szczytu Tokyo Tower jadąc tyłem</td>
+                            <td>Modyfikacja w stylu Shibuya Neon</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Złomek i UFO</strong></td>
+                            <td>Ambasador Ziemi</td>
+                            <td>Zawody w piciu benzyny z latającym spodkiem Mówio</td>
+                            <td>Uprowadzony przez promień traktora kosmitów</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="ciekawostki-box">
+            <h2>Ciekawostki ze Świata Aut</h2>
+            <ul>
+                <li><strong>Numer 95 Zygzaka:</strong> Odnosi się do roku 1995, w którym zadebiutował film <em>Toy Story</em> – pierwsza pełnometrażowa animacja komputerowa w historii Pixara.</li>
+                <li><strong>Nazwisko McQueena:</strong> Zygzak otrzymał swoje nazwisko na cześć Glenna McQueena, wybitnego animatora wytwórni Pixar, który zmarł w 2002 roku.</li>
+                <li><strong>Tajemniczy kod A113:</strong> Oznaczenie sali wykładowej animacji na uczelni CalArts, które pojawia się na tablicy rejestracyjnej Złomka i w niemal każdej produkcji Pixara.</li>
+                <li><strong>Początki Złomka:</strong> Złomek jest inspirowany holownikiem International Harvester L-170 z 1951 roku. W młodości miał piękny błękitny lakier, zanim pokryła go słynna warstwa rdzy.</li>
+                <li><strong>Kultowy polski dubbing:</strong> Niezapomniany głos Złomkowi podarował wybitny aktor Witold Pyrkosz, nadając mu jedyny w swoim rodzaju, uwielbiany w Polsce charakter.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Bujdy na Resorach &bull; Projekt wykonał: <strong>Paweł Mierzwa</strong></p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
